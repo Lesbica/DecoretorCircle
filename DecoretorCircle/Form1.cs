@@ -30,15 +30,11 @@ namespace DecoretorCircle
 
         private void button2_Click(object sender, EventArgs e)
         {
-            // Перевіряємо, чи є об'єкт класу Коло
             if (_circle != null)
             {
-                // Викликаємо метод ShowDialog для ColorDialog
                 if (colorDialog1.ShowDialog() == DialogResult.OK)
                 {
-                    // Створюємо об'єкт класу ColoredCircle, який декорує попередній об'єкт вибраним кольором
                     _circle = new ColoredCircle(_circle, colorDialog1.Color);
-                    // Викликаємо метод для відображення кола у консолі
                     _circle.DisplayInConsole();
                     _g.Clear(this.BackColor);
                     SolidBrush brush = new SolidBrush(colorDialog1.Color);
@@ -48,7 +44,6 @@ namespace DecoretorCircle
             }
             else
             {
-                // Повідомляємо користувача, що потрібно спочатку створити коло
                 MessageBox.Show("Ви повинні спочатку створити коло, натиснувши на кнопку \"Створити коло\"", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
