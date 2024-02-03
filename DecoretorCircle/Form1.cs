@@ -5,8 +5,8 @@ namespace DecoretorCircle
     public partial class Form1 : Form
     {
         private Circle _circle;
-        private readonly Graphics _g;
-        private readonly Pen _p;
+        private Graphics _g;
+        private Pen _p;
         public Form1()
         {
             InitializeComponent();
@@ -37,9 +37,8 @@ namespace DecoretorCircle
                     _circle = new ColoredCircle(_circle, colorDialog1.Color);
                     _circle.DisplayInConsole();
                     _g.Clear(this.BackColor);
-                    SolidBrush brush = new SolidBrush(colorDialog1.Color);
-                    _g.FillEllipse(brush, this.Width / 2 - (int)_circle.radius, this.Height / 2 - (int)_circle.radius, (int)_circle.radius * 2, (int)_circle.radius * 2);
-                    _g.DrawEllipse(_p, this.Width / 2 - (int)_circle.radius, this.Height / 2 - (int)_circle.radius, (int)_circle.radius * 2, (int)_circle.radius * 2);
+                    _p = new Pen(colorDialog1.Color);
+                    _circle.DisplayOnForm(_g, _p, this.Width / 2, this.Height / 2);
                 }
             }
             else

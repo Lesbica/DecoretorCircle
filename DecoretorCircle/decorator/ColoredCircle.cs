@@ -20,7 +20,7 @@ namespace DecoretorCircle.decorator
 
         public override void DisplayOnForm(Graphics g, Pen p, int x, int y)
         {
-            p.Color = color;
+            this.color = p.Color;
             base.DisplayOnForm(g, p, x, y);
         }
     }
