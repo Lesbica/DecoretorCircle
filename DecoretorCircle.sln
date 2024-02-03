@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34322.80
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoretorCircle", "DecoretorCircle\DecoretorCircle.csproj", "{5858AF90-6CBD-451A-962B-F067CC6D2DF3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5858AF90-6CBD-451A-962B-F067CC6D2DF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5858AF90-6CBD-451A-962B-F067CC6D2DF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5858AF90-6CBD-451A-962B-F067CC6D2DF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5858AF90-6CBD-451A-962B-F067CC6D2DF3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CF674E38-8A3B-47F9-AAFC-8B96C3400974}
+	EndGlobalSection
+EndGlobal
